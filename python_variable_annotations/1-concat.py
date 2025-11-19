@@ -4,6 +4,7 @@ Module 1-concat
 Provides a type-annotated function to concatenate two strings.
 """
 
+
 def concat(str1: str, str2: str) -> str:
     """
     Concatenate two strings and return the result.
