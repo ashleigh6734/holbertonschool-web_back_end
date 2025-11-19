@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Module 6-sum_mixed_list
-Provides a type-annotated function to sum a list containing integers and floats.
+sum a list containing integers and floats.
 """
 
 
