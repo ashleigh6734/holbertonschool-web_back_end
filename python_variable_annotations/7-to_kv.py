@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Module 7-to_kv
-Provides a type-annotated function that returns a tuple with a string and the square of a number.
+returns a tuple with a string and the square of a number.
 """
 
 
