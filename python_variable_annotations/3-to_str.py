@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Module 3-to_str
-Provides a type-annotated function to convert a float to its string representation.
+convert a float to its string representation.
 """
 
 
