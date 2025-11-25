@@ -10,6 +10,7 @@ from typing import List
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
+
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     Spawns wait_random n times with the specified max_delay.
@@ -28,7 +29,6 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         tasks.append(wait_random(max_delay))
 
     delays = []
-    # asyncio.as_completed yields the futures as they finish (not in order of submission)
     for task in asyncio.as_completed(tasks):
         result = await task
         delays.append(result)
