@@ -6,15 +6,15 @@ Module for 0-async_generator.py
 
 
 import asyncio
+import random
+from typing import Generator
 
-
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """
-    Asynchronous generator that yields numbers 0 to 9 with a 1 second delay.
-
-    Yields:
-        int: The next number in the sequence from 0 to 9.
+    Loops 10 times, waits 1 second each time asynchronously,
+    and yields a random number between 0 and 10.
     """
-    for i in range(10):
+    for _ in range(10):
         await asyncio.sleep(1)
-        yield i
+        yield random.uniform(0, 10)
+    
